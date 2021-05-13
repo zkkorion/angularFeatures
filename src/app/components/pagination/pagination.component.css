@@ -1,0 +1,13 @@
+
+.pagination-button {
+  width: 35px;
+  height: 100%;
+  margin: 0 3px;
+  background: #C4C4C4;
+}
+
+.pagination-button_disabled {
+  pointer-events: none;
+  background: #DFDFDF;
+  color: #C4C4C4;
+}

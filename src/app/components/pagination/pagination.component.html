@@ -1,0 +1,17 @@
+<button
+  class="pagination-button"
+  [class.pagination-button_disabled]="!isPreviousPage()"
+  (click)="getPreviousPage()"
+>&lt;&lt;</button>
+<ng-container *ngFor="let page of paginationPages">
+  <button
+    class="pagination-button"
+    [class.pagination-button_disabled]="page === currentPage"
+    (click)="getPage(page)"
+  >{{page}}</button>
+</ng-container>
+<button
+  class="pagination-button"
+  [class.pagination-button_disabled]="!isNextPage()"
+  (click)="getNextPage()"
+>&gt;&gt;</button>
